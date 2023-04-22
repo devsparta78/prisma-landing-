@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to bottom, #ffffffe6, #d1dade);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    text-align: center;
+    color: #7d9898;
+    position: relative;
+  }
+  
+  img {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.9rem;
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+  }
+  
+  /* Agregar opacidad mínima y la imagen de fondo */
+  body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), url('img/prismaglassfl.jpg');
+    background-size: cover;
+    opacity: 0.1; 
+    background-position: center;
+    z-index: -1;
+  }
